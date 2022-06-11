@@ -23,7 +23,7 @@ class TestTranslatorMethods(unittest.TestCase):
         translated_french_text = english_to_french('Hello')
         self.assertEqual(expected_french_text, translated_french_text)
 
-    def test_null_input_for_englishToFrench(self):
+    def test_null_input_for_english_to_french(self):
         with self.assertRaises((NameError, ValueError)):
             english_to_french(None)
 
